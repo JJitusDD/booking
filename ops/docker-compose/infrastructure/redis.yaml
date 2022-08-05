@@ -1,0 +1,11 @@
+version: '2.4'
+
+services:
+
+  redis:
+    image: redis:6.0-alpine
+    init: true
+    restart: on-failure
+    container_name: redis
+    ports:
+      - "6379:6379"
